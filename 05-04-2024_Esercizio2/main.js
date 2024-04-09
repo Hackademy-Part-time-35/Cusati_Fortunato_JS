@@ -1,5 +1,5 @@
 // Traccia 1
-
+// perfetto
 let num1 = 2;
 let num2 = 5;
 let num3 = 7;
@@ -16,6 +16,7 @@ console.log("===============================================");
 
 // Traccia 2
 
+// bene, hai integrato con il prompt()
 let anno_corrente = 2024;
 anno_di_nascita = prompt("Inserisci il tuo anno di nascita");
 
@@ -45,5 +46,7 @@ console.log("Differenza = " + sottrazione);
 console.log("Moltiplicazione = " + moltiplicazione);
 console.log("Divisione = " + divisione);
 console.log("Potenza = " + potenza);
+
+// molto bene nulla da dire prosegui così!!!! ;)
 
 console.log("===============================================");
