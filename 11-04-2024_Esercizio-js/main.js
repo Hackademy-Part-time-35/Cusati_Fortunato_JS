@@ -1,31 +1,31 @@
 // //-------- Traccia 1 ---------- //
 
-// let valore = parseInt(prompt("Inserisci un numero"));
+let valore = parseInt(prompt("Inserisci un numero"));
 
-// for (let index = 1; index <=10; index++) {
-//     totale = valore * index;
-//     console.log(`${valore} x ${index} = ${totale}`);
-// }
+for (let index = 1; index <=10; index++) {
+    totale = valore * index;
+    console.log(`${valore} x ${index} = ${totale}`);
+}
 
 // //-------- Traccia 2 --------- // 
 
-// console.log("=============================");
+console.log("=============================");
 
-// let resto = 0;
-// let dispari = 0;
+let resto = 0;
+let dispari = 0;
 
-// for (let i = 1; i <=20; i++){
+for (let i = 1; i <=20; i++){
 
-//     resto=i%2;
+    resto=i%2;
 
-//     if(resto == 0){
-//         console.log(i);
-//     } else {
-//         dispari ++;
-//     }
-// }
+    if(resto == 0){
+        console.log(i);
+    } else {
+        dispari ++;
+    }
+}
 
-// console.log (`i numeri dispari sono ${dispari}`);
+console.log (`i numeri dispari sono ${dispari}`);
 
 //---------- Traccia 3 ---------//
 
