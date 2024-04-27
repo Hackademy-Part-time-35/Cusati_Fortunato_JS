@@ -1,3 +1,4 @@
+// Benissimo
 //------------- Traccia 1 --------------//
 
 let numero = Math.floor(Math.random() * 100);

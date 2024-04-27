@@ -1,3 +1,4 @@
+// benissimo
 //----------- Traccia 1 ------------//
 
 let tiri = parseInt(prompt("Quanti dadi volete tirare?"));
