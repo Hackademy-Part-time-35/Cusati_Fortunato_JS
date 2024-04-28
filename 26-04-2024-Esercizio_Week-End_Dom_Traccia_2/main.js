@@ -1,3 +1,5 @@
+// Benissimo Fortunato, bene così
+
 let submit = document.querySelector('#submit');
 let title = document.querySelector('#title');
 let article = document.querySelector('#article');
