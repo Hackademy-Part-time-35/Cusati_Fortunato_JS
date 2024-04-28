@@ -1,3 +1,5 @@
+// Bene Fortunato
+
 //------------------- Traccia 1 ---------------//
 
 let persona = {
