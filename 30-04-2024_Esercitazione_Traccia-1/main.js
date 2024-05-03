@@ -23,9 +23,13 @@ function scala_secondi(){
 };
 
 start.addEventListener('click', function(){
-    leggi_secondi();
-    scala_secondi_check = setInterval(scala_secondi,1000);
-    input.value = '';
+    if (input.value <= 0){
+        alert('Inserisci un numero')
+    } else {
+        leggi_secondi();
+        scala_secondi_check = setInterval(scala_secondi,1000);
+        input.value = '';
+    }
 });
 
 pause.addEventListener('click', function(){
