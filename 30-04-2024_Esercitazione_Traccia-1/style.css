@@ -1,3 +1,7 @@
+body {
+    margin-top: 100px;
+}
+
 #countdown {
     height: 100px;
     width: 100px;
@@ -21,6 +25,10 @@
     border: 1px solid black;
     box-shadow: 4px 4px 9px -4px rgba(0,0,0,0.49);
     
+}
+
+.button_area{
+    width: 30%;
 }
 
 .buttons {
