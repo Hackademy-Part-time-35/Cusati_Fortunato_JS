@@ -1,0 +1,7 @@
+#show_contact:hover{
+    #icon {
+        transform: rotate(180deg);
+        transition-duration: 400ms;
+    }
+}
+
