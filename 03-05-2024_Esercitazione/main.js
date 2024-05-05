@@ -10,6 +10,7 @@ let add_contact = document.querySelector('#add_contact');
 let rmv_contact = document.querySelector('#rmv_contact');
 let show_contact = document.querySelector('#show_contact');
 let modify_contact = document.querySelector('#modify_contact');
+let search_contact = document.querySelector('#search_contact');
 
 // Cattura container 
 
@@ -97,6 +98,19 @@ let agenda = {
                 this.contatti[i] = {name , tel, mail};
             }
         }
+    },
+
+    search_contact: function (nome){
+        if (input_name.value != 0){
+            for (let i = 0; i < agenda.contatti.length; i++){
+                if (agenda.contatti[i].name === nome){
+                    alert(`Contatto trovato! \n \n Nome: ` + this.contatti[i].name + `\n \n Telefono: ` + this.contatti[i].tel + `\n \n Email: ` + this.contatti[i].mail)
+                    input_name.value = '';
+                } 
+            }
+        } else {
+            alert(`Contatto non trovato`)
+        }
     }
 
 };
@@ -145,3 +159,6 @@ modify_contact.addEventListener('click', function(){
     }
 })
 
+search_contact.addEventListener('click', function (){
+    agenda.search_contact(input_name.value);
+});
