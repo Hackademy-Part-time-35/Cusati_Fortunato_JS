@@ -17,7 +17,7 @@ h1, h2, h3, h4, h5, h6 {
     font-family: "Lora", sans-serif;
 }
 
-p, ul {
+p, ul, span {
     color: var(--my-text-color);
     font-family: "Montserrat", sans-serif;
 }
@@ -56,4 +56,12 @@ p, ul {
 
 /* ================ MAIN ================ */
 
+.text-center {
+    text-align: center;
+}
+
+.my-img-size {
+    height: 18rem;
+    width: auto;
+}
 /* ================ FOOTER ================ */
