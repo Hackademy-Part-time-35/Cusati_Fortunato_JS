@@ -22,6 +22,14 @@ p, ul, span {
     font-family: "Montserrat", sans-serif;
 }
 
+/* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
+/* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
+/* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
+/* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
+
+
+/* ================ HOME PAGE ================ */
+
 
 /* ================ HEADER ================ */
 
@@ -65,4 +73,26 @@ p, ul, span {
     width: auto;
 }
 
+.custom-button {
+    color: var(--my-text-color);
+    border-color: var(--my-text-color);
+}
+
+.custom-button:hover {
+    color: var(--my-bg-color-white);
+    background-color: var(--my-text-color);
+}
+
 /* ================ FOOTER ================ */
+
+/* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
+/* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
+/* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
+/* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
+
+/* ================ PAGINA ANNUNCI ================ */
+
+.filter_section {
+    background-color: var(--my-bg-color-gray);
+    height: fit-content;
+}

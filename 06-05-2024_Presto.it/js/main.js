@@ -6,6 +6,8 @@ let ville = document.querySelector('#ville');
 
 // Animazione Annunci 
 
+let controllo_ripetizione = false;
+
 function crea_intervallo(elemento, numMax, tempo) {
     let counter = 0;
     let intervallo = setInterval(() => {
@@ -20,10 +22,11 @@ function crea_intervallo(elemento, numMax, tempo) {
 
 let osserva_annunci = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
-        if (entry.isIntersecting){
-            crea_intervallo(annunci, 135, 8);
+        if (entry.isIntersecting && controllo_ripetizione == false){
+            crea_intervallo(annunci, 50, 8);
             crea_intervallo(clienti, 200, 5);
-            crea_intervallo(ville, 100, 8)  
+            crea_intervallo(ville, 100, 8);
+            controllo_ripetizione = true;  
         }
     })
 });
