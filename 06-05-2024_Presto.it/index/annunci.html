@@ -46,41 +46,48 @@
           <div class="row">
 
             <!-- Filtri -->
-            <div class="col-3 filter_section pt-3 box pb-2">
+            <div class="col-md-3 filter_section pt-3 box pb-2">
               <h2 class="mb-4 pb-2 border-bottom border-black">Filtra per:</h2>
 
               <!-- Filtro per città -->
               <div class="border-bottom border-black pb-2">
-                <h5>Città</h5>
-                <div class="cont_city_filter">
+                <h5><i class="fa-solid fa-city"></i> Città</h5>
+                <div id="cont_city_filter">
+                  <input type="radio" class="btn-check form-check-input" name="city_filter" id="all" autocomplete="off">
+                  <label class="btn ms-1" for="all">Tutte le città</label>
                 </div>
               </div> 
 
               <!-- Filtro per Numeri camera -->
               <div class="border-bottom border-black mt-4 pb-2">
-                <h5>Numero stanze</h5>
-                <input type="radio" class="btn-check" name="room_filter" id="3" autocomplete="off">
+                <h5><i class="fa-solid fa-house"></i> Numero stanze</h5>
+                <input type="radio" class="btn-check room-check-input" name="room_filter" id="qualsiasi" autocomplete="off">
+                <label class="btn" for="qualsiasi">Qualsiasi</label>
+                <input type="radio" class="btn-check room-check-input" name="room_filter" id="3" autocomplete="off">
                 <label class="btn" for="3">3 Camere</label>
-                <input type="radio" class="btn-check" name="room_filter" id="4" autocomplete="off">
+                <input type="radio" class="btn-check room-check-input" name="room_filter" id="4" autocomplete="off">
                 <label class="btn" for="4">4 Camere</label>
-                <input type="radio" class="btn-check" name="room_filter" id="5" autocomplete="off">
+                <input type="radio" class="btn-check room-check-input" name="room_filter" id="5" autocomplete="off">
                 <label class="btn" for="5">5 Camere</label>
-                <input type="radio" class="btn-check" name="room_filter" id="6" autocomplete="off">
+                <input type="radio" class="btn-check room-check-input" name="room_filter" id="6" autocomplete="off">
                 <label class="btn" for="6">6 Camere</label>
               </div>
 
               <!-- Filtro piscina -->
               <div class="border-bottom border-black mt-4 pb-2">
-                <h5>Con piscina</h5>
-                <input type="radio" class="btn-check" name="pool_filter" id="true" autocomplete="off">
+                <h5><i class="fa-solid fa-person-swimming"></i> Con piscina</h5>
+                
+                <input type="radio" class="btn-check pool-check-input" name="pool_filter" id="true" autocomplete="off">
                 <label class="btn" for="true">Si</label>
-                <input type="radio" class="btn-check" name="pool_filter" id="false" autocomplete="off">
+                <input type="radio" class="btn-check pool-check-input" name="pool_filter" id="false" autocomplete="off">
                 <label class="btn" for="false">No</label>
+                <input type="radio" class="btn-check pool-check-input" name="pool_filter" id="uguale" autocomplete="off">
+                <label class="btn" for="uguale">Indifferente</label>
               </div>
 
               <!-- Filtro Prezzo -->
               <div class="border-bottom border-black mt-4 pb-2">
-                <h5>Prezzo</h5>
+                <h5><i class="fa-solid fa-euro-sign"></i> Prezzo</h5>
                 <input type="radio" class="btn-check" name="price_filter" id="option_1" autocomplete="off">
                 <label class="btn" for="option_1">< 300.000€</label>
                 <input type="radio" class="btn-check" name="price_filter" id="option_2" autocomplete="off">
@@ -92,18 +99,15 @@
                 
               </div>
 
-              <!-- Applica/Reset Filtri -->
-              <button type="button" id="apply_filter" class="btn mt-2 custom-button">Applica Filtri</button>
-              <button type="button" id="reset_filter" class="btn mt-2 float-end custom-button">Reset Filtri</button>
+               <!-- Reset Filtri -->
+              <button type="button" class="btn custom-button mt-2 float-end" id="reset_filter">Reset Filtri</button>
 
             </div>
 
             <!-- Annunci -->
-            <div class="col-9">
-
-              <div id="cont_annunci" class="row">
+            <div class="col-md-9">
+              <div id="cont_annunci" class="row border-bottom border-black ms-auto">
               </div>
-
             </div>
 
           </div>
