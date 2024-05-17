@@ -46,62 +46,72 @@
           <div class="row">
 
             <!-- Filtri -->
-            <div class="col-md-3 filter_section pt-3 box pb-2">
-              <h2 class="mb-4 pb-2 border-bottom border-black">Filtra per:</h2>
+            <div class="col-12 col-md-3 filter_section py-3 box pb-2 mb-3">
+              <h4 class="pb-2 border-bottom border-black">
+                Filtra per:
+                <button class="btn float-end" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFilter" aria-expanded="true" aria-controls="collapseFilter">
+                  <i class="fa-solid fa-caret-down"></i>
+                </button>
+              </h4>
 
-              <!-- Filtro per città -->
-              <div class="border-bottom border-black pb-2">
-                <h5><i class="fa-solid fa-city"></i> Città</h5>
-                <div id="cont_city_filter">
-                  <input type="radio" class="btn-check form-check-input" name="city_filter" id="all" autocomplete="off">
-                  <label class="btn ms-1" for="all">Tutte le città</label>
+              
+              
+              <div class="collapse" id="collapseFilter">
+                <!-- Filtro per città -->
+                <div class="border-bottom border-black pb-2">
+                  <h5><i class="fa-solid fa-city"></i> Città</h5>
+                  <div id="cont_city_filter">
+                    <input type="radio" class="btn-check form-check-input" name="city_filter" id="all" autocomplete="off">
+                    <label class="btn ms-1" for="all">Tutte le città</label>
+                  </div>
+                </div> 
+
+                <!-- Filtro per Numeri camera -->
+                <div class="border-bottom border-black mt-4 pb-2">
+                  <h5><i class="fa-solid fa-house"></i> Numero stanze</h5>
+                  <input type="radio" class="btn-check room-check-input" name="room_filter" id="qualsiasi" autocomplete="off">
+                  <label class="btn" for="qualsiasi">Qualsiasi</label>
+                  <input type="radio" class="btn-check room-check-input" name="room_filter" id="3" autocomplete="off">
+                  <label class="btn" for="3">3 Camere</label>
+                  <input type="radio" class="btn-check room-check-input" name="room_filter" id="4" autocomplete="off">
+                  <label class="btn" for="4">4 Camere</label>
+                  <input type="radio" class="btn-check room-check-input" name="room_filter" id="5" autocomplete="off">
+                  <label class="btn" for="5">5 Camere</label>
+                  <input type="radio" class="btn-check room-check-input" name="room_filter" id="6" autocomplete="off">
+                  <label class="btn" for="6">6 Camere</label>
                 </div>
-              </div> 
 
-              <!-- Filtro per Numeri camera -->
-              <div class="border-bottom border-black mt-4 pb-2">
-                <h5><i class="fa-solid fa-house"></i> Numero stanze</h5>
-                <input type="radio" class="btn-check room-check-input" name="room_filter" id="qualsiasi" autocomplete="off">
-                <label class="btn" for="qualsiasi">Qualsiasi</label>
-                <input type="radio" class="btn-check room-check-input" name="room_filter" id="3" autocomplete="off">
-                <label class="btn" for="3">3 Camere</label>
-                <input type="radio" class="btn-check room-check-input" name="room_filter" id="4" autocomplete="off">
-                <label class="btn" for="4">4 Camere</label>
-                <input type="radio" class="btn-check room-check-input" name="room_filter" id="5" autocomplete="off">
-                <label class="btn" for="5">5 Camere</label>
-                <input type="radio" class="btn-check room-check-input" name="room_filter" id="6" autocomplete="off">
-                <label class="btn" for="6">6 Camere</label>
-              </div>
+                <!-- Filtro piscina -->
+                <div class="border-bottom border-black mt-4 pb-2">
+                  <h5><i class="fa-solid fa-person-swimming"></i> Con piscina</h5>
+                  
+                  <input type="radio" class="btn-check pool-check-input" name="pool_filter" id="true" autocomplete="off">
+                  <label class="btn" for="true">Si</label>
+                  <input type="radio" class="btn-check pool-check-input" name="pool_filter" id="false" autocomplete="off">
+                  <label class="btn" for="false">No</label>
+                  <input type="radio" class="btn-check pool-check-input" name="pool_filter" id="uguale" autocomplete="off">
+                  <label class="btn" for="uguale">Indifferente</label>
+                </div>
 
-              <!-- Filtro piscina -->
-              <div class="border-bottom border-black mt-4 pb-2">
-                <h5><i class="fa-solid fa-person-swimming"></i> Con piscina</h5>
+                <!-- Filtro Prezzo -->
+                <div class="border-bottom border-black mt-4 pb-2">
+                  <h5><i class="fa-solid fa-euro-sign"></i> Prezzo</h5>
+                  <input type="radio" class="btn-check" name="price_filter" id="option_1" autocomplete="off">
+                  <label class="btn" for="option_1">< 300.000€</label>
+                  <input type="radio" class="btn-check" name="price_filter" id="option_2" autocomplete="off">
+                  <label class="btn" for="option_2">300.000€ - 500.000€</label>
+                  <input type="radio" class="btn-check" name="price_filter" id="option_3" autocomplete="off">
+                  <label class="btn" for="option_3">500.000€ - 800.000€</label>
+                  <input type="radio" class="btn-check" name="price_filter" id="option_4" autocomplete="off">
+                  <label class="btn" for="option_4">> 800.000€</label>
                 
-                <input type="radio" class="btn-check pool-check-input" name="pool_filter" id="true" autocomplete="off">
-                <label class="btn" for="true">Si</label>
-                <input type="radio" class="btn-check pool-check-input" name="pool_filter" id="false" autocomplete="off">
-                <label class="btn" for="false">No</label>
-                <input type="radio" class="btn-check pool-check-input" name="pool_filter" id="uguale" autocomplete="off">
-                <label class="btn" for="uguale">Indifferente</label>
+                </div>
+
+                <!-- Reset Filtri -->
+                <button type="button" class="btn custom-button mt-2 float-end" id="reset_filter">Reset Filtri</button>
+
               </div>
-
-              <!-- Filtro Prezzo -->
-              <div class="border-bottom border-black mt-4 pb-2">
-                <h5><i class="fa-solid fa-euro-sign"></i> Prezzo</h5>
-                <input type="radio" class="btn-check" name="price_filter" id="option_1" autocomplete="off">
-                <label class="btn" for="option_1">< 300.000€</label>
-                <input type="radio" class="btn-check" name="price_filter" id="option_2" autocomplete="off">
-                <label class="btn" for="option_2">300.000€ - 500.000€</label>
-                <input type="radio" class="btn-check" name="price_filter" id="option_3" autocomplete="off">
-                <label class="btn" for="option_3">500.000€ - 800.000€</label>
-                <input type="radio" class="btn-check" name="price_filter" id="option_4" autocomplete="off">
-                <label class="btn" for="option_4">> 800.000€</label>
-                
-              </div>
-
-               <!-- Reset Filtri -->
-              <button type="button" class="btn custom-button mt-2 float-end" id="reset_filter">Reset Filtri</button>
-
+         
             </div>
 
             <!-- Annunci -->

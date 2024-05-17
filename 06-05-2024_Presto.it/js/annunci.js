@@ -27,7 +27,7 @@ fetch('../dati/elenco_annunci.json')
             cont_annunci.innerHTML = '';
             array_annunci.forEach(annuncio => {
                 let column = document.createElement('div');
-                column.classList.add('col-4','mb-3');
+                column.classList.add('col-12','col-md-4','mb-3');
                 let pool;
                 if (annuncio.pool === true){
                     pool = 'Con piscina'
@@ -220,6 +220,7 @@ fetch('../dati/elenco_annunci.json')
             create_card_annunci(annunci)
             annunci_filtrati = '';
         })
+
 
     });
 
